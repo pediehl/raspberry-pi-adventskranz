@@ -1,4 +1,7 @@
-# raspberry-pi-adventskranz
+# Raspberry Pi: Adventskranz
+
+![](/images/IMG_20161025_215557.jpg)
+
 Am 27. November 2016 ist 1. Advent. Bastelprojekt dazu: Digitaler Adventskranz mit dem RaspberryPi und Python. Jeden Adventsonntag wird, bis Weihnachten, eine weitere LED zugeschaltet.
 
 Ziel: Aktuelles Datum bestimmen und die Adventsonntage für das aktuelle Jahr berechnen. Jeden Adventsonntag wird, bis Weihnachten, eine weitere LED zugeschaltet.
