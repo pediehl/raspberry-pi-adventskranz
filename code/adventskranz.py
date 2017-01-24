@@ -5,10 +5,15 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 import datetime
 
-GPIO.setup(6, GPIO.OUT) #erster Advent
-GPIO.setup(13, GPIO.OUT) #zweiter Advent
-GPIO.setup(19, GPIO.OUT) #dritter Advent
-GPIO.setup(26, GPIO.OUT) #vierter Advent
+led_erster_advent = 6
+led_zweiter_advent = 13
+led_dritter_advent = 19
+led_vierter_advent = 26
+
+GPIO.setup(led_erster_advent, GPIO.OUT)
+GPIO.setup(led_zweiter_advent, GPIO.OUT)
+GPIO.setup(led_dritter_advent, GPIO.OUT)
+GPIO.setup(led_vierter_advent, GPIO.OUT)
 
 #aktuelle Zeit ermitteln
 now = datetime.datetime.now()
@@ -26,13 +31,13 @@ erster_advent = weihnachten - datetime.timedelta(wochentag + 22)
 #LEDS aktivieren je nach Datum / Advent-Sonntag
 if(now <= weihnachten):
     if(now >= erster_advent):
-        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(led_erster_advent, GPIO.HIGH)
     if(now >= zweiter_advent):
-        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(led_zweiter_advent, GPIO.HIGH)
     if(now >= dritter_advent):
-        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(led_dritter_advent, GPIO.HIGH)
     if(now >= vierter_advent):
-        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(led_vierter_advent, GPIO.HIGH)
 
 #Ausgabe der Uebersicht auf dem Bildschirm
 print now.strftime('Die Advent-Sonntage im Jahr %Y') 
