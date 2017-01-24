@@ -26,7 +26,7 @@ if(now <= weihnachten):
     if(now >= erster_advent):
         GPIO.output(6, GPIO.HIGH)
     if(now >= zweiter_advent):
-	GPIO.output(13, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
     if(now >= dritter_advent):
         GPIO.output(19, GPIO.HIGH)
     if(now >= vierter_advent):
