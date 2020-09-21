@@ -11,4 +11,4 @@ Aktuelles Datum bestimmen und die Adventsonntage für das aktuelle Jahr berechne
 Pfadfinderinnen- und Pfadfinderstufe
 
 
-http://dev-blog.vcp.de/raspberry-pi-adventskranz/
+https://www.vcp.de/pfadfinden/raspberry-pi-adventskranz/
